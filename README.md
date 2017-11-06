@@ -1,6 +1,6 @@
 ## Binary Tree Implementation and traversals
 
-Binary tree is a tree which contains 0, 1 or 2 childrens. 
+Binary tree is a tree which each node contains 0, 1 or 2 childrens. 
 
 **Traversals in Binary Tree**:
 
