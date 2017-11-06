@@ -1,4 +1,4 @@
-## Binary Tree Implementation and traversals
+implementation## Binary Tree Implementation and traversals
 
 Binary tree is a tree which each node contains 0, 1 or 2 childrens. 
 
@@ -26,7 +26,7 @@ Binary tree is a tree which each node contains 0, 1 or 2 childrens.
 
 V means Visiting the node and printing it<br>
 
-**Height of a Node** is a number of nodes in the longest path between root and leaf node in downward direction.<br>
+**Height of a Node** is a number of nodes in the longest path between node and leaf node in downward direction.<br>
 
 Height of _tree_ is a height of _root_ node.<br>
 
