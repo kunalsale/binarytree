@@ -6,7 +6,8 @@ public class BinaryTree
 	{
 		Scanner scr = new Scanner(System.in);
 		int choice = 0;
-		BTClass btClass = new BTClass();	
+		BTClass btClass = new BTClass();
+		Traversals traversals = new Traversals();	
 		do
 		{
 			System.out.println("------------Menu-------------");
@@ -16,7 +17,10 @@ public class BinaryTree
 			System.out.println("4. PostOrder Traversal");
 			System.out.println("5. Level Order Traversal");
 			System.out.println("6. Heigth of a Tree");
-			System.out.println("7. Exit");
+			System.out.println("7. PreOrder without Recursion");
+			System.out.println("8. InOrder without Recursion");
+			System.out.println("9. PostOrder without Recursion");
+			System.out.println("10. Exit");
 			System.out.println("-----------------------------");
 			System.out.print("Enter your choice:");
 			choice = scr.nextInt();
@@ -43,9 +47,16 @@ public class BinaryTree
 					break;
 				case 6:System.out.println(btClass.heigthOfATree()+" ");
 					break;
+				case 7:traversals.preOrderWithoutRecursion(btClass.getRoot());
+					break;
+				case 8:traversals.inOrderWithoutRecursion(btClass.getRoot());
+					break;
+				case 9:traversals.postOrderTraversal(btClass.getRoot());
+					break;
 			}
+			System.out.println();
 		}
-		while(choice < 7 && choice > 0);
+		while(choice < 9 && choice > 0);
 		
 	}
 }
